@@ -10,9 +10,10 @@
 #' randomDates()
 
 randomDates <- function(N_Dates, startDate, endDate) {
-     startDate <- as.POSIXct(as.Date(startDate))
-     endDate <- as.POSIXct(as.Date(endDate))
-     diffDate <- as.numeric(difftime(endDate,startDate,unit="sec"))
-     nDays <- sort(runif(N_Dates, 0, diffDate))
-     outDates <- startDate + nDays
+	startDate <- as.POSIXct(as.Date(startDate))
+	endDate <- as.POSIXct(as.Date(endDate))
+	diffDate <- as.numeric(difftime(endDate,startDate,unit="sec"))
+	nDays <- sort(runif(N_Dates, 0, diffDate))
+	outDates <- startDate + nDays
+	return(outDates)
 }

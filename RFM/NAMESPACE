@@ -3,3 +3,4 @@
 export(RFM_Segments)
 export(getRank)
 export(getRankedClusters)
+export(randomDates)
